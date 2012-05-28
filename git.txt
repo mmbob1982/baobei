@@ -11,4 +11,12 @@ $ git config --global user.email "your_email@youremail.com"
 7. $ git push -u origin master
 
 更新
+第一次更新时
+$ git pull origin master		
+以后可以
 $ git pull
+
+
+
+
+
