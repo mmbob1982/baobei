@@ -1,0 +1,14 @@
+1. 安装git客户端（参考http://help.github.com/win-set-up-git/）
+
+2. 设定用户名，email
+$ git config --global user.name "jianghua"
+$ git config --global user.email "your_email@youremail.com"
+
+3. 创建工程存放文件， 并进入
+4. $ git init
+5. $ git remote add origin git@github.com:username/Hello-World.git
+6. 通过git-gui把修改过的文件提交
+7. $ git push -u origin master
+
+更新
+$ git pull
