@@ -1,0 +1,33 @@
+RewriteEngine on
+RewriteRule ^(.*)bbs_(\d+).html /bbs/read.php\?tid=$2
+RewriteRule ^(.*)bbs_(\d+)_(.*).html(.*) /bbs/read.php\?tid=$2&page=$3$4
+RewriteRule ^(.*)bbs_(\d+)_(\d+) /bbs/thread.php\?fid=$2&page=$3
+RewriteRule ^(.*)bbs_(\d+) /bbs/thread.php\?fid=$2
+RewriteRule ^(.*)bbs_(\d+)/ /bbs/thread.php\?fid=$2
+RewriteRule ^(.*)bbs/yzsq/(.*+) /bbs/thread.php\?cyid=$2
+RewriteRule ^(.*)bbs/yzsq/(.*+)/ /bbs/thread.php\?cyid=$2
+RewriteRule ^(.*)ditu /house/index.php\?m=house&q=housemap&step=searchinfo
+RewriteRule ^(.*)ditu/ /house/index.php\?m=house&q=housemap&step=searchinfo
+RewriteRule ^(.*)newhouse_(\d+).html(.*) /house/index.php\?m=house&q=info&hid=$2$3
+RewriteRule ^(.*)newhouse_(\d+)_p.html /house/index.php\?m=house&q=album&hid=$2
+RewriteRule ^(.*)newhouse_(\d+)_p_(\d+).html /house/index.php\?m=house&q=album&hid=$2&typeid=$3
+RewriteRule ^(.*)newhouse_(\d+) /house/index.php\?m=house&q=list&page=$2
+
+RewriteRule ^(.*)esf_(\d+).html /esf/index.php\?m=house&q=sale&a=houseinfo&houseid=$2
+RewriteRule ^(.*)czf_(\d+).html /esf/index.php\?m=house&q=hire&a=houseinfo&houseid=$2
+
+RewriteRule ^(.*)shop_(\d+).html /esf/index.php\?m=house&q=shop&uid=$2
+RewriteRule ^(.*)agencys_(\d+).html /esf/index.php\?m=house&q=agency&agencyid=$2
+
+RewriteRule ^(.*)zj_(\d+).html /esf/index.php\?m=house&q=agency&agencyid=$2
+RewriteRule ^(.*)zj_(\d+).html /esf/index.php\?m=house&q=agency&agencyid=$2&a=sale
+RewriteRule ^(.*)zjczf_(\d+).html /esf/index.php\?m=house&q=agency&agencyid=$2&a=hire
+RewriteRule ^(.*)zjtd_(\d+).html /esf/index.php\?m=house&q=agency&agencyid=$2&a=member
+
+RewriteRule ^(.*)esf_(\d+) /esf/index.php\?m=house&q=sale&act=all&page=$2
+RewriteRule ^(.*)czf_(\d+) /esf/index.php\?m=house&q=hire&act=all&page=$2
+
+
+RewriteRule ^(.*)shopesf_(\d+).html /esf/index.php\?m=house&q=shop&uid=$2&a=hire
+RewriteRule ^(.*)shopczf_(\d+).html /esf/index.php\?m=house&q=shop&uid=$2&a=sale
+RewriteRule ^(.*)shopinfo_(\d+).html /esf/index.php\?m=house&q=shop&uid=$2&a=info
