@@ -133,7 +133,7 @@ class yp_form {
 			$string .= $tree->get_tree(0, $str);
 			$data = "<table><tr><td><select name='f_filed_1' id='f_$field' $css $formattribute>";
 			$data .= $string;
-			$data .= "</select></td><td><input id='addbutton' type='button' value='".L('add_to_list')."' disabled style='width:100px;color:#ff0000' onclick=\"transact('update','f_$field','$field', '5');\"><BR><BR>
+			$data .= "</select></td><td><input id='addbutton' type='button' value='".L('add_to_list')."' disabled style='width:100px;color:#ff0000' onclick=\"transact('update','f_$field','$field', '30');\"><BR><BR>
 			<input id='deletebutton' type='button' value='".L('del_form_list')."' style='width:100px;color:#ff0000' onclick=\"transact('delete','','$field');\"> </td><td><select name=\"info[$field][]\" multiple id='$field' size='8' style='width:195px;'>$selected_values</select></td></tr></table>";
 		} else if ($setting['boxtype'] == 'down') {
 			if(!empty($CATEGORY)) {

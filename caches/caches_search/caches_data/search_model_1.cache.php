@@ -1,5 +1,11 @@
 <?php
 return array (
+  15 => 
+  array (
+    'typeid' => '53',
+    'name' => 'Æ·ÅÆ',
+    'sort' => '0',
+  ),
   1 => 
   array (
     'typeid' => '1',

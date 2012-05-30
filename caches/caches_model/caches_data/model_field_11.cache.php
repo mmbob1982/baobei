@@ -1,42 +1,5 @@
 <?php
 return array (
-  'categories' => 
-  array (
-    'fieldid' => '150',
-    'modelid' => '11',
-    'siteid' => '1',
-    'field' => 'categories',
-    'name' => '主营行业',
-    'tips' => '',
-    'css' => '',
-    'minlength' => '0',
-    'maxlength' => '0',
-    'pattern' => '',
-    'errortips' => '',
-    'formtype' => 'linkage',
-    'setting' => 'array (
-  \'linkageid\' => \'3360\',
-  \'space\' => \'\',
-  \'filtertype\' => \'1\',
-)',
-    'formattribute' => '',
-    'unsetgroupids' => '',
-    'unsetroleids' => '',
-    'iscore' => '0',
-    'issystem' => '1',
-    'isunique' => '0',
-    'isbase' => '1',
-    'issearch' => '1',
-    'isadd' => '1',
-    'isfulltext' => '0',
-    'isposition' => '0',
-    'listorder' => '0',
-    'disabled' => '0',
-    'isomnipotent' => '0',
-    'linkageid' => '3360',
-    'space' => '',
-    'filtertype' => '1',
-  ),
   'companyname' => 
   array (
     'fieldid' => '84',

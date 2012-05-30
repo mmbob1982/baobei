@@ -383,7 +383,7 @@ class category extends admin {
 	}
 	/**
 	 * 更新缓存
-	 */
+	 *//*
 	public function cache($modelid = 0) {
 		$categorys = $yp_models = $this->categorys = array();
 
@@ -439,7 +439,133 @@ class category extends admin {
 			setcache('category_yp_'.$modelid,$categorys,'yp');
 		}
 		return true;
+	}*/
+	/**
+	 * 上面的是备份
+	 * 更新缓存，企业库读取的是联动菜单配置，其他部门没有变
+	 */
+	public function cache($modelid = 0) {
+		$categorys = $yp_models = $this->categorys = array();
+
+		if (!$modelid) {
+			//获取企业库模型ID
+			$sitemodel_db = pc_base::load_model('sitemodel_model');
+			$yp_company_model = $sitemodel_db->get_one(array('tablename'=>'yp_company', 'type'=>'4'), 'modelid');
+			$yp_company_modelid = $yp_company_model['modelid'];
+			$yp_models = getcache('yp_model', 'model');
+			if (is_array($yp_models)) {
+				$yp_models = array_keys($yp_models);
+			}
+			$yp_models[] = $yp_company_modelid;
+			if (is_array($yp_models)) {
+				foreach ($yp_models as $mid) {
+					$datas = $this->db->select(array('modelid'=>$mid),'catid,items',10000);
+					$array = array();
+					foreach ($datas as $r) {
+						$array[$r['catid']] = $r['items'];
+					}
+					setcache('category_yp_items_'.$modelid, $array,'yp');
+					if ($modelid == 11 || $modelid == 13){
+						$categorys = $this->getCategorys($modelid);
+					}else {
+						$result = $this->db->select(array('module'=>'yp', 'modelid'=>$mid),'*',20000,'listorder ASC');
+						foreach ($result as $r) {
+							unset($r['module'],$r['catdir']);
+							$setting = string2array($r['setting']);
+							$r['meta_title'] = $setting['meta_title'];
+							$r['meta_keywords'] = $setting['meta_keywords'];
+							$r['meta_description'] = $setting['meta_description'];
+							$categorys[$r['catid']] = $r;
+						}
+					}
+					setcache('category_yp_'.$mid,$categorys,'yp');
+					$categorys = array();
+				}
+			}
+		} else {
+			$modelid = intval($modelid);
+			$datas = $this->db->select(array('modelid'=>$modelid),'catid,items',10000);
+			$array = array();
+			foreach ($datas as $r) {
+				$array[$r['catid']] = $r['items'];
+			}
+			setcache('category_yp_items_'.$modelid, $array,'yp');
+			if ($modelid == 11 || $modelid == 13){
+				$categorys = $this->getCategorys($modelid);
+			}else {
+				$result = $this->db->select(array('module'=>'yp', 'modelid'=>$modelid),'*',20000,'listorder ASC');
+				foreach ($result as $r) {
+					unset($r['module'],$r['catdir']);
+					$setting = string2array($r['setting']);
+					$r['meta_title'] = $setting['meta_title'];
+					$r['meta_keywords'] = $setting['meta_keywords'];
+					$r['meta_description'] = $setting['meta_description'];
+					$categorys[$r['catid']] = $r;
+				}
+			}
+			$this->categorys = $categorys;
+			setcache('category_yp_'.$modelid,$categorys,'yp');
+		}
+		return true;
 	}
+	private function getCategorys($modelid){
+		$categorys = array();
+		$linkageid = 3360;
+		switch ($modelid){
+			case 11: $linkageid = 3360;break;
+			case 13: $linkageid = 3413;break;
+		}
+		$linkage_arr = getcache($linkageid, 'linkage');
+		$linkage_arr = $linkage_arr['data'];
+		foreach ($linkage_arr as $v){
+			$r = array (
+			    'catid' => $v['linkageid'],
+			    'siteid' => $this->siteid,
+			    'type' => '0',
+			    'modelid' => '11',
+			    'parentid' => $v['parentid'],
+			    'arrparentid' => rtrim($this->getParentids($linkage_arr, $v['linkageid']), ','),
+			    'child' => $v['child'],
+			    'arrchildid' => $v['arrchildid'],
+			    'catname' => $v['name'],
+			    'style' => '',
+			    'image' => '',
+			    'description' => '',
+			    'parentdir' => '',
+			    'url' => APP_PATH. '/index.php?m=yp&c=index&a=list_company&catid='. $v['linkageid'],
+			    'items' => '0',
+			    'hits' => '0',
+			    'setting' => 'array (
+			  \'meta_title\' => \'\',
+			  \'meta_keywords\' => \'\',
+			  \'meta_description\' => \'\',
+			)',
+			    'listorder' => $v['listorder'],
+			    'ismenu' => '1',
+			    'sethtml' => '0',
+			    'letter' => new_addslashes(strtolower(implode('', gbk_to_pinyin($v['name'])))),
+			    'usable_type' => '',
+			    'additional' => '',
+			    'commenttypeid' => '0',
+			    'meta_title' => '',
+			    'meta_keywords' => '',
+			    'meta_description' => '',
+			  );
+			  $categorys[$v['linkageid']] = $r;
+		}
+		unset($linkage_arr);
+		return $categorys;
+	}
+	
+	private function getParentids(&$linkage_arr, $linkageid){
+		$parentid = $linkage_arr[$linkageid]['parentid'];
+		if ($parentid != 0){
+			$parentid = $this->getParentids($linkage_arr, $parentid). $parentid;
+		}
+		return $parentid. ',';
+	}
+	
+	
 	/**
 	 * 更新缓存并修复栏目
 	 */

@@ -4,7 +4,7 @@ return array (
   array (
     'userid' => '1',
     'companyname' => 'weihan的公司',
-    'catids' => ',婴儿服饰,孕妇用品,婴儿食品,',
+    'catids' => ',婴儿服饰,孕妇服饰,孕妇护理品,安全座椅,',
     'pattern' => ',1,2,',
     'products' => '',
     'genre' => '企业单位',
@@ -108,6 +108,7 @@ return array (
     'points' => '0',
     'publish_total' => '',
     'url' => 'http://www.baobei.com/index.php?m=yp&c=com_index&userid=1',
+    'categories' => '0',
   ),
 );
 ?>

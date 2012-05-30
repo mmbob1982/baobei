@@ -83,3 +83,36 @@
 <?php exit;?>05-27 22:00:07 | 2 | in_array() expects parameter 2 to be array, null given | phpcms\modules\yp\additional.php | 53
 <?php exit;?>05-27 22:00:07 | 2 | in_array() expects parameter 2 to be array, null given | phpcms\modules\yp\additional.php | 53
 <?php exit;?>05-27 22:00:07 | 2 | in_array() expects parameter 2 to be array, null given | phpcms\modules\yp\additional.php | 53
+<?php exit;?>05-30 20:15:55 | 2 | require(F:\wwwroot\baobei\phpcms\modules\yp\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\yp\ypmodel_field.php | 213
+<?php exit;?>05-30 20:56:14 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 20:56:14 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 20:56:14 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 21:00:15 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 21:00:15 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 21:00:15 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 21:00:18 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 21:00:18 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 21:00:18 | 2 | extract() expects parameter 1 to be array, string given | phpcms\libs\classes\tree.class.php | 120
+<?php exit;?>05-30 21:35:33 | 2 | Invalid argument supplied for foreach() | phpcms\modules\yp\category.php | 45
+<?php exit;?>05-30 21:37:04 | 2 | Invalid argument supplied for foreach() | phpcms\modules\yp\category.php | 45
+<?php exit;?>05-30 21:38:07 | 2 | Invalid argument supplied for foreach() | phpcms\modules\yp\category.php | 45
+<?php exit;?>05-30 21:44:55 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:44:55 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:44:55 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:44:55 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:45:31 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:45:31 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:45:31 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:45:31 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:53:28 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:53:28 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:53:28 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:53:28 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:57:30 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:57:30 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:57:30 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:57:30 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
