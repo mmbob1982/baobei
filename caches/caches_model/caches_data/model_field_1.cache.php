@@ -1,5 +1,42 @@
 <?php
 return array (
+  'duoxuan' => 
+  array (
+    'fieldid' => '165',
+    'modelid' => '1',
+    'siteid' => '1',
+    'field' => 'duoxuan',
+    'name' => '¶àÑ¡²âÊÔ',
+    'tips' => '',
+    'css' => '',
+    'minlength' => '0',
+    'maxlength' => '0',
+    'pattern' => '',
+    'errortips' => '',
+    'formtype' => 'linkboxs',
+    'setting' => 'array (
+  \'linkboxsid\' => \'1\',
+  \'space\' => \'\',
+  \'most\' => \'\',
+)',
+    'formattribute' => '',
+    'unsetgroupids' => '',
+    'unsetroleids' => '',
+    'iscore' => '0',
+    'issystem' => '1',
+    'isunique' => '0',
+    'isbase' => '1',
+    'issearch' => '0',
+    'isadd' => '1',
+    'isfulltext' => '0',
+    'isposition' => '0',
+    'listorder' => '0',
+    'disabled' => '0',
+    'isomnipotent' => '0',
+    'linkboxsid' => '1',
+    'space' => '',
+    'most' => '',
+  ),
   'catid' => 
   array (
     'fieldid' => '1',

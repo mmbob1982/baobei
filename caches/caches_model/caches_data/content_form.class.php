@@ -474,6 +474,16 @@ class content_form {
 		if($errortips) $this->formValidator .= '$("#'.$field.'").formValidator({onshow:"'.$errortips.'",onfocus:"'.$errortips.'"}).inputValidator({min:1,onerror:"'.$errortips.'"});';
 		return $formtext;
 	}
+	function linkboxs($field, $value, $fieldinfo) {
+		$setting = string2array($fieldinfo['setting']);
+		$linkboxsid = $setting['linkboxsid'];
+		return menu_linkboxs($linkboxsid,$field,$value,$setting);
+	}
+	function linkpc($field, $value, $fieldinfo) {
+		$setting = string2array($fieldinfo['setting']);
+		$linkpcid = $setting['linkpcid'];
+		return menu_linkpc($linkpcid,$field,$value,$setting);
+	}
 
  } 
 ?>

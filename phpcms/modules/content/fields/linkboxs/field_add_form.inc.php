@@ -1,26 +1,31 @@
 <table cellpadding="2" cellspacing="1" width="98%">
 	<tr> 
-      <td>èœå•ID</td>
-      <td><input type="text" id="linkboxsid" name="setting[linkboxsid]" value="0" size="5" class="input-text"> 
-	  <input type='button' value="åœ¨åˆ—è¡¨ä¸­é€‰æ‹©" onclick="omnipotent('selectid','?m=admin&c=linkboxs&a=public_get_list','åœ¨åˆ—è¡¨ä¸­é€‰æ‹©')" class="button">
-		è¯·åˆ°å¯¼èˆª æ‰©å±• > è”åŠ¨èœå• > æ·»åŠ è”åŠ¨èœå•</td>
+      <td>²Ëµ¥ID</td>
+      <td><input type="text" id="linkboxsid" name="setting[linkboxsid]" 
+	  value="0" size="5" class="input-text"> 
+	  <input type='button' value="ÔÚÁÐ±íÖÐÑ¡Ôñ" 
+	  onclick="omnipotent('selectid','?m=admin&c=linkboxs&a=public_get_list','ÔÚ
+	  ÁÐ±íÖÐÑ¡Ôñ')" class="button">
+		Çëµ½µ¼º½ À©Õ¹ > Áª¶¯²Ëµ¥ > Ìí¼ÓÁª¶¯²Ëµ¥</td>
     </tr>
 	<tr>
-	<td>æ˜¾ç¤ºæ–¹å¼</td>
+	<td>ÏÔÊ¾·½Ê½</td>
 	<td>
       	<input name="setting[showtype]" value="0" type="radio">
-        åªæ˜¾ç¤ºåç§°
+        Ö»ÏÔÊ¾Ãû³Æ
         <input name="setting[showtype]" value="1" type="radio">
-        æ˜¾ç¤ºå®Œæ•´è·¯å¾„  
+        ÏÔÊ¾ÍêÕûÂ·¾¶  
         <input name="setting[showtype]" value="2" type="radio">
-        è¿”å›žèœå•id		
+        ·µ»Ø²Ëµ¥id		
 	</td></tr>
 	<tr> 
-      <td>è·¯å¾„åˆ†éš”ç¬¦</td>
-      <td><input type="text" name="setting[space]" value="" size="5" class="input-text"> æ˜¾ç¤ºå®Œæ•´è·¯å¾„æ—¶ç”Ÿæ•ˆ</td>
+      <td>Â·¾¶·Ö¸ô·û</td>
+      <td><input type="text" name="setting[space]" value="" size="5" 
+	  class="input-text"> ÏÔÊ¾ÍêÕûÂ·¾¶Ê±ÉúÐ§</td>
     </tr>	
      <tr> 
-      <td>æœ€å¤šæ·»åŠ æ•°é‡</td>
-      <td><input type="text" name="setting[most]" value="" size="5" class="input-text">ç”¨æˆ·æœ€å¤šæ·»åŠ çš„æ•°æ®è¡Œæ•°</td>
+      <td>×î¶àÌí¼ÓÊýÁ¿</td>
+      <td><input type="text" name="setting[most]" value="" size="5" 
+	  class="input-text">ÓÃ»§×î¶àÌí¼ÓµÄÊý¾ÝÐÐÊý</td>
     </tr>        	
 </table>

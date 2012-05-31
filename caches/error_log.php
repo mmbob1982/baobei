@@ -116,3 +116,5 @@
 <?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
 <?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
 <?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>05-31 22:40:14 | 2 | require(F:\wwwroot\baobei\phpcms\modules\content\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\content\sitemodel_field.php | 207
+<?php exit;?>05-31 22:41:42 | 2 | require(F:\wwwroot\baobei\phpcms\modules\content\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\content\sitemodel_field.php | 207
