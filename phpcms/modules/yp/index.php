@@ -664,5 +664,63 @@ class index {
 		param::set_cookie('prov_userid', '');
 		return true;
 	}
+	
+	//企业库列表页
+	public function list_brand() {
+		$catid = intval($_GET['catid']);
+		$catid_p = intval($_GET['catid_p']);
+//		if (!$catid) showmessage(L('link_address_error_category'));
+		$modelid = $this->get_company_model();
+		$company_fenlei = getcache('category_yp_'.$modelid,'yp');
+
+ 		/*以下代码为获取当前分类的父亲分类*/
+
+		if ($catid) {
+			$category_db = pc_base::load_model('category_model');
+			$r = $category_db->get_one(array('catid'=>$catid), 'catname, modelid, setting, parentid');
+			if (!$modelid) {
+				$modelid = intval($r['modelid']);
+			}
+ 		}
+
+		//获取分类的完整名称及父栏目url
+		if ($catid) {
+			if ($r['parentid']) {
+				$parent_url = new_get_parent_url($modelid, $catid, $r['parentid']);
+			} else {
+				$parent_url['title'] = $r['catname'];
+				if ($this->setting['enable_rewrite']) {
+					$parent_url['url'] = APP_PATH.'company-.html';
+				} else {
+ 					$parent_url['url'] = APP_PATH.'index.php?m=yp&c=index&a=company';
+				}
+			}
+		}
+  		$page = $_GET['page'];
+
+   		//企业库主页SEO
+
+   		$cat_setting = string2array($r['setting']);
+  		$this->setting['seo_title'] = $cat_setting['meta_title'] ? $cat_setting['meta_title'] : ($model_setting['meta_title'] ? $model_setting['meta_title'] : $this->setting['seo_title']);
+		$this->setting['meta_keywords'] = $cat_setting['meta_keywords'] ? $cat_setting['meta_keywords'] : ($model_setting['meta_keywords'] ? $model_setting['meta_keywords'] : $this->setting['meta_keywords']);
+		$this->setting['meta_description'] = $cat_setting['meta_description'] ? $cat_setting['meta_description'] : ($model_setting['meta_description'] ? $model_setting['meta_description'] : $this->setting['meta_description']);
+		$SEO = seo(SITEID, '', $this->setting['seo_title'], $this->setting['meta_description'], $this->setting['meta_keywords']);
+
+		$where = ' where 1=1 ';
+		
+		$catid_str = '';
+		if (!empty($catid)){ 
+			$catid_str = ' INNER JOIN phpcms_yp_relation_15 r ON r.id = b.id ';
+			$where .= ' AND r.catid in ('. get_arrchildid(3360, $catid).')';
+		}
+		
+		$catid_p_str = '';
+		if (!empty($catid_p)){ 
+			$catid_p_str = ' INNER JOIN phpcms_yp_relation_15_p p ON p.id = b.id ';
+			$where .= ' AND p.catid in ('. get_arrchildid(3413, $catid_p).')';
+		}
+		
+ 		include template('yp', 'list_brand');
+	}
 }
 ?>

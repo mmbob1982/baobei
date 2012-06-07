@@ -126,6 +126,28 @@ class yp_tag {
 		$yp_relation_db = pc_base::load_model('yp_relation_model');
  		$sql = get_sql_catid("category_yp_".$modelid,$catid,'yp');
   		$sql .= " group by userid";
+  		echo $sql;
+ 		return $yp_relation_db->select($sql, '*', $data['limit'], $order, '');
+ 	}
+ 	
+ 	
+	/**
+ 	 * 取出该分类下所有品牌信息
+  	 * @param $typeid 分类ID
+ 	 */
+ 	public function get_brand_byfenlei($data){
+ 		pc_base::load_app_func('global');
+ 		$modelid = MODELID_BRAND;
+ 		$catid = intval($data['catid']);
+ 		$order = $data['order'];
+ 		
+ 		$content_db = pc_base::load_model('yp_content_model');
+		$content_db->set_model($modelid);
+ 		
+ 		$yp_company_db = pc_base::load_model('yp_company_model');
+		$yp_relation_db = pc_base::load_model('yp_relation_model');
+ 		$sql = get_sql_catid("category_yp_".$modelid,$catid,'yp');
+  		$sql .= " group by id";
  		return $yp_relation_db->select($sql, '*', $data['limit'], $order, '');
  	}
 

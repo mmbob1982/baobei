@@ -4,6 +4,8 @@ define('PHPCMS_PATH', dirname(__FILE__).'/../');
 include PHPCMS_PATH.'/phpcms/base.php';
 
 define('UC_KEY', pc_base::load_config('system', 'uc_key'));
+define('UCUSE', pc_base::load_config('system', 'ucuse'));
+if(UC_KEY=='' || UCUSE==0){exit('please check uc config!');}
 
 define('API_RETURN_SUCCEED', '1');
 define('API_RETURN_FAILED', '-1');
@@ -19,6 +21,7 @@ if(empty($get)) exit('Invalid Request');
 
 include dirname(__FILE__).'/uc_client/lib/xml.class.php';
 $post = xml_unserialize(file_get_contents('php://input'));
+
 
 $action = $get['action'];
 

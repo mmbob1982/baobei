@@ -1,5 +1,5 @@
 <?php
-return '<!--expiretime:1338088891-->
+return '<!--expiretime:1339074039-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -29,14 +29,14 @@ return '<!--expiretime:1338088891-->
 	<div class="logo"><a href="//"><img src="http://www.baobei.com/statics/images/v9/logo.jpg" /></a></div>
     <div class="search">
     	<div class="tab">
-																<a href="javascript:;" onclick="setmodel(1, $(this));" style="outline:medium none;" hidefocus="true"  class="on" >新闻</a><span> | </span>										<a href="javascript:;" onclick="setmodel(3, $(this));" style="outline:medium none;" hidefocus="true" >图片</a><span> | </span>										<a href="javascript:;" onclick="setmodel(2, $(this));" style="outline:medium none;" hidefocus="true" >下载</a><span> | </span>										<a href="javascript:;" onclick="setmodel(52, $(this));" style="outline:medium none;" hidefocus="true" >专题</a>								</div>
+																<a href="javascript:;" onclick="setmodel(53, $(this));" style="outline:medium none;" hidefocus="true"  class="on" >品牌</a><span> | </span>										<a href="javascript:;" onclick="setmodel(1, $(this));" style="outline:medium none;" hidefocus="true" >新闻</a><span> | </span>										<a href="javascript:;" onclick="setmodel(3, $(this));" style="outline:medium none;" hidefocus="true" >图片</a><span> | </span>										<a href="javascript:;" onclick="setmodel(2, $(this));" style="outline:medium none;" hidefocus="true" >下载</a><span> | </span>										<a href="javascript:;" onclick="setmodel(52, $(this));" style="outline:medium none;" hidefocus="true" >专题</a>								</div>
 
         <div class="bd">
            <form action="http://www.baobei.com/index.php" method="get" target="_blank">
 				<input type="hidden" name="m" value="search"/>
 				<input type="hidden" name="c" value="index"/>
 				<input type="hidden" name="a" value="init"/>
-				<input type="hidden" name="typeid" value="1" id="typeid"/>
+				<input type="hidden" name="typeid" value="53" id="typeid"/>
 				<input type="hidden" name="siteid" value="1" id="siteid"/>
                 <input type="text" class="text" name="q" id="q"/><input type="submit" value="搜 索" class="button" />
             </form>
@@ -53,7 +53,9 @@ return '<!--expiretime:1338088891-->
              			 			 			 			 			 				<li class="line">|</li>
 				<li><a href="http://www.baobei.com/index.php?m=yp&c=index&a=model&modelid=13"><span>产品</span></a></li>
 			 			 			 			 				<li class="line">|</li>
-				<li><a href="http://www.baobei.com/index.php?m=yp&c=index&a=model&modelid=14"><span>商机</span></a></li>
+				<li><a href="http://www.baobei.com/index.php?m=yp&c=index&a=model&modelid=14"><span>供求</span></a></li>
+			 			 			 			 				<li class="line">|</li>
+				<li><a href="http://www.baobei.com/index.php?m=yp&c=index&a=model&modelid=15"><span>品牌</span></a></li>
 			 			 				 <li class="line">|</li>
 				<li><a href="http://www.baobei.com/index.php?m=yp&c=index&a=company"><span>企业库</span></a></li>
             </ul>
@@ -64,7 +66,7 @@ return '<!--expiretime:1338088891-->
 </div><div class="main clear">
     <div class="col-left">
     	<div class="category-main box generic">
-        	<div class="title"><strong>商机分类</strong></div>
+        	<div class="title"><strong>供求分类</strong></div>
             <div class="cat-content">
 						</div>
         </div>
@@ -79,6 +81,7 @@ return '<!--expiretime:1338088891-->
 										<ul class="list-num">
 								</ul>
 										<ul class="list-num" style="display:none;">
+									<li><em class="n1">1</em><a href="" class="blue">[]</a> <a href="http://www.baobei.com/index.php?m=yp&c=index&a=show&catid=,3416,3418,&id=1">产品1</a></li>
 								</ul>
 						</div>
             <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
@@ -103,7 +106,7 @@ return '<!--expiretime:1338088891-->
 <p class="info">
       <a href="http://www.baobei.com/index.php?m=link" target="_blank">友情链接</a>
 <br />
-Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>V9.1.14</em> &copy; 2011 <img src="http://www.baobei.com/statics/images/copyright.gif"/></p>
+Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>V9.1.15</em> &copy; 2011 <img src="http://www.baobei.com/statics/images/copyright.gif"/></p>
 </div>
 <script type="text/javascript">
 $(function(){

@@ -118,3 +118,33 @@
 <?php exit;?>05-30 21:59:54 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
 <?php exit;?>05-31 22:40:14 | 2 | require(F:\wwwroot\baobei\phpcms\modules\content\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\content\sitemodel_field.php | 207
 <?php exit;?>05-31 22:41:42 | 2 | require(F:\wwwroot\baobei\phpcms\modules\content\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\content\sitemodel_field.php | 207
+<?php exit;?>06-05 20:22:07 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2715
+<?php exit;?>06-05 21:10:34 | 2 | require(F:\wwwroot\baobei\phpcms\modules\member\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\member\member_modelfield.php | 206
+<?php exit;?>06-05 21:27:02 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2715
+<?php exit;?>06-05 21:27:02 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2661
+<?php exit;?>06-05 21:27:02 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2661
+<?php exit;?>06-05 21:27:02 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2661
+<?php exit;?>06-05 21:27:02 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2661
+<?php exit;?>06-05 21:27:02 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2661
+<?php exit;?>06-05 21:34:30 | 2 | Invalid argument supplied for foreach() | phpcms\libs\functions\global.func.php | 2715
+<?php exit;?>06-05 21:44:26 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-05 21:44:26 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>06-05 21:44:26 | 2 | Invalid argument supplied for foreach() | phpcms\modules\yp\business.php | 170
+<?php exit;?>06-05 21:45:37 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-05 21:45:37 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>06-05 21:45:37 | 2 | Invalid argument supplied for foreach() | phpcms\modules\yp\business.php | 170
+<?php exit;?>06-05 21:46:39 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-05 21:46:39 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>06-05 21:46:39 | 2 | Invalid argument supplied for foreach() | phpcms\modules\yp\business.php | 171
+<?php exit;?>06-05 21:47:08 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-05 21:47:08 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>06-05 21:47:08 | 2 | Invalid argument supplied for foreach() | phpcms\modules\yp\business.php | 171
+<?php exit;?>06-05 21:49:04 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-05 21:49:04 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>06-05 21:49:29 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-05 21:49:29 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>06-05 21:51:28 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-05 21:51:28 | 2 | strlen() expects parameter 1 to be string, array given | phpcms\libs\functions\global.func.php | 134
+<?php exit;?>06-05 21:59:48 | 2 | require(F:\wwwroot\baobei\phpcms\modules\yp\fields\linkbox\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\yp\ypmodel_field.php | 128
+<?php exit;?>06-07 21:38:28 | 2 | Missing argument 6 for push_api::position_update(), called in F:\wwwroot\baobei\caches\caches_model\caches_data\content_update.class.php on line 62 and defined | phpcms\modules\admin\classes\push_api.class.php | 33
+<?php exit;?>06-07 21:41:57 | 2 | require(F:\wwwroot\baobei\phpcms\modules\yp\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\yp\ypmodel_field.php | 213

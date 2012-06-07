@@ -23,6 +23,8 @@ $fields = array('text'=>'单行文本',
 				'downfile'=>'镜像下载',
 				'downfiles'=>'多文件上传',
 				'omnipotent'=>'万能字段',
+				'linkboxs'=>'联动多选菜单',
+				'linkpc'=>'省市单选',
 				);
 //不允许删除的字段，这些字段讲不会在字段添加处显示
 $not_allow_fields = array('catids','typeid','title','keyword','posid','template','username');

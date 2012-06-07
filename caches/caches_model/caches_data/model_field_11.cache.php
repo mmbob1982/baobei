@@ -50,10 +50,12 @@ return array (
     'maxlength' => '200',
     'pattern' => '',
     'errortips' => '',
-    'formtype' => 'catids',
+    'formtype' => 'linkboxs',
     'setting' => 'array (
-  \'boxtype\' => \'multiple\',
-  \'filtertype\' => \'1\',
+  \'linkboxsid\' => \'3360\',
+  \'showtype\' => \'0\',
+  \'space\' => \'\',
+  \'most\' => \'10\',
 )',
     'formattribute' => 'onchange="select_catids();"',
     'unsetgroupids' => '',
@@ -69,8 +71,10 @@ return array (
     'listorder' => '0',
     'disabled' => '0',
     'isomnipotent' => '0',
-    'boxtype' => 'multiple',
-    'filtertype' => '1',
+    'linkboxsid' => '3360',
+    'showtype' => '0',
+    'space' => '',
+    'most' => '10',
   ),
   'pattern' => 
   array (

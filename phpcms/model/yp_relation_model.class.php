@@ -13,5 +13,9 @@ class yp_relation_model extends model {
 		$this->table_name = 'yp_relation';
 		parent::__construct();
 	}
+	
+	public function setTableName($table_name){
+		!empty($table_name) && $this->table_name = $this->db_config[$this->db_setting]['tablepre'].$table_name;
+	}
 }
 ?>

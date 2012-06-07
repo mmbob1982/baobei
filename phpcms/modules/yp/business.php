@@ -160,6 +160,10 @@ class business extends common {
 					$modelid = intval($_POST['modelid']);
 		 			$info = $_POST['info'];
 		 			$catids = $info['catids'];
+		 			
+		 			$catids = explode(',', $catids);
+		 			$catids = array_filter($catids);
+		 			
 		 			require_once CACHE_MODEL_PATH.'yp_input.class.php';
 		 			$yp_input = new yp_input($modelid);
 					$inputinfo = $yp_input->get($info);
@@ -167,7 +171,7 @@ class business extends common {
 					$this->company_db->update($data, array('userid'=>$this->_userid));
 					//删除以前的对应关系，重新记录对应关系
 					$yp_relation_db->delete(array('userid'=>$this->_userid));
-		 			foreach ($catids as $c) {
+		 			foreach ($catids as $c) { 
 						$yp_relation_db->insert(array('userid'=>$this->_userid, 'catid'=>$c));
 					}
 					showmessage(L('operation_success'), APP_PATH.'index.php?m=yp&c=business&a=init&t=3');
@@ -622,7 +626,10 @@ class business extends common {
 					$fields = array_keys($fields);
 					$info = array();
 					foreach($_POST['info'] as $_k=>$_v) {
-						if(in_array($_k, $fields)) $info[$_k] = $_v;
+						if(in_array($_k, $fields)) {
+							$info[$_k] = $_v;
+							
+						}
 					}
 					if (isset($_POST['info']['addition_field'])) {
 						$cat_db = pc_base::load_model('category_model');
@@ -698,6 +705,10 @@ class business extends common {
 							$content_db->update(array('addition_field'=>$addition_field), array('id'=>$id));
 						}
  					}
+ 					
+ 					//类别添加到relation表
+ 					$this->modelToRelation($info, $modelid, $id);
+ 					
                     if ($info['status']==99) {
                         showmessage(L('operation_success'), APP_PATH.'index.php?m=yp&c=business&a=content&action=list&modelid='.$modelid.'&status=99&t=3');
                     } else {
@@ -770,6 +781,9 @@ class business extends common {
 						//删除相关的评论
 						$commentid = id_encode('yp_'.$catid, $id, $siteid);
 						$this->comment->del($commentid, $siteid, $id, $catid);
+						
+						//删除关联表
+						$this->modelToRelation(array(), $modelid, $id);
 					}
 					//在会员统计字段中减去相应数量
 					$publish_total = string2array($this->memberinfo['publish_total']);
@@ -810,11 +824,12 @@ class business extends common {
 			//修改信息
 			case 'edit':
 				if (isset($_POST['dosubmit'])) {
-					$catid = $_POST['info']['catid'] = intval($_POST['info']['catid']);
+					/*$catid = $_POST['info']['catid'] = intval($_POST['info']['catid']);
 					$CATEGORYS = getcache('category_yp_'.$modelid, 'yp');
-					$category = $CATEGORYS[$catid];
+					$category = $CATEGORYS[$catid];*/
+					$CATEGORYS = $category = '';
 					$id = intval($_POST['id']);
-					$catid = $_POST['info']['catid'] = intval($_POST['info']['catid']);
+//					$catid = $_POST['info']['catid'] = intval($_POST['info']['catid']);
 					if (isset($_POST['info']['addition_field'])) {
 						$cat_db = pc_base::load_model('category_model');
 						//判断最高级栏目是否设置了附加字段
@@ -878,6 +893,10 @@ class business extends common {
 							$content_db->update(array('addition_field'=>$addition_field), array('id'=>$id));
 						}
  					}
+ 					
+ 					//类别添加到relation表
+ 					$this->modelToRelation($_POST['info'], $modelid, $id);
+ 					
                     if ($_POST['info']['status']==99) {
                         showmessage(L('operation_success'), APP_PATH.'index.php?m=yp&c=business&a=content&action=list&modelid='.$modelid.'&status=99&t=3');
                     } else {
@@ -1081,6 +1100,42 @@ class business extends common {
 						}
 				}
 			break;
+		}
+	}
+	
+	/**
+	 * Enter description here...
+	 *
+	 * @param array $info_arr
+	 * @param int $modelid
+	 * @param int $id
+	 */
+	private function modelToRelation($info_arr, $modelid, $id){
+		$relation_tbl = pc_base::load_model('yp_relation_model');
+		
+		//品牌
+		if ($modelid == MODELID_BRAND){
+			$relation_tbl->setTableName(RELATION_BRAND);
+			$this->addToRelation($id, $info_arr['catid'], $relation_tbl);
+			
+			$relation_tbl->setTableName(RELATION_BRAND_PRODUCTION);
+			$this->addToRelation($id, $info_arr['catid_p'], $relation_tbl);
+		}else {
+			//
+		}
+	}
+	
+	private function addToRelation($id, $catids, $relation_tbl){
+		//删除以前的对应关系，重新记录对应关系
+		$relation_tbl->delete(array('id'=>$id));
+		
+		if (!empty($catids)){
+			$catids = explode(',', $catids);
+	 		$catids = array_filter($catids);
+	 		
+	 		foreach ($catids as $c) { 
+				$relation_tbl->insert(array('id'=>$id, 'catid'=>$c));
+			}
 		}
 	}
 }

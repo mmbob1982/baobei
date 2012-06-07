@@ -3901,4 +3901,12 @@ function get_sun_linkage_select($parentid=0,$linkagelist,$selectid)
    // echo $select;
     return $select;
 }
+
+function get_arrchildid($linkage_id=3360, $catid = 0, $module = 'linkage') {
+	$category = getcache($linkage_id,$module);
+	$category = $category['data'];
+	$catid = intval($catid);
+	if(!isset($category[$catid])) return false;
+	return $category[$catid]['child'] ? $category[$catid]['arrchildid'] : $catid;
+}
 ?>

@@ -20,5 +20,25 @@ return array (
     'sort' => '0',
     'type' => '2',
   ),
+  16 => 
+  array (
+    'modelid' => '16',
+    'siteid' => '1',
+    'name' => '品牌企业会员',
+    'description' => '品牌企业会员',
+    'tablename' => 'member_ppqyhy',
+    'setting' => '',
+    'addtime' => '0',
+    'items' => '0',
+    'enablesearch' => '1',
+    'disabled' => '0',
+    'default_style' => '',
+    'category_template' => '',
+    'list_template' => '',
+    'show_template' => '',
+    'js_template' => '',
+    'sort' => '0',
+    'type' => '2',
+  ),
 );
 ?>

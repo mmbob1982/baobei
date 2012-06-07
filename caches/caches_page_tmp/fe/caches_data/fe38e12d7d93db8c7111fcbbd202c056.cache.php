@@ -1,5 +1,5 @@
 <?php
-return '<!--expiretime:1338386946-->
+return '<!--expiretime:1339074854-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -174,7 +174,7 @@ return '<!--expiretime:1338386946-->
 <p class="info">
       <a href="http://www.baobei.com/index.php?m=link" target="_blank">”—«È¡¥Ω”</a>
 <br />
-Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>V9.1.14</em> &copy; 2011 <img src="http://www.baobei.com/statics/images/copyright.gif"/></p>
+Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>V9.1.15</em> &copy; 2011 <img src="http://www.baobei.com/statics/images/copyright.gif"/></p>
 </div>
 <script type="text/javascript">
 $(function(){

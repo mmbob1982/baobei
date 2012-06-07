@@ -1,0 +1,17 @@
+{if $modelid == MODELID_PRODUCTION}
+	{php $userid = $this->memberinfo['userid'];}
+	{pc:get sql="select * from phpcms_yp_brand where userid = $userid and status=99" return="brand_arr"}
+	{/pc}
+	<tr>
+		<th width="100">ËùÊôÆ·ÅÆ£º</th> 
+		<td>
+			<select name="info[brand]">
+				<option value="0">ÇëÑ¡ÔñÆ·ÅÆ</option>
+				{loop $brand_arr $brand}
+				<option value="{$brand['id']}" {if $brand['id'] == $data['brand']}selected="selected"{/if}>{$brand['title']}</option>
+				{/loop}
+			</select>
+		</td>
+	</tr>
+{/if}
+					
