@@ -1,4 +1,4 @@
-{if $modelid == MODELID_PRODUCTION}
+{if $modelid == MODELID_PRODUCTION || $modelid == MODELID_TRADE}
 	{php $userid = $this->memberinfo['userid'];}
 	{pc:get sql="select * from phpcms_yp_brand where userid = $userid and status=99" return="brand_arr"}
 	{/pc}

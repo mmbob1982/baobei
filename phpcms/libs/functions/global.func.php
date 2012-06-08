@@ -2687,7 +2687,7 @@ function get_category_select($title = '', $catid = 0, $linkboxsid = 1, $extend =
 	$CATEGORY = $datas['data'];
 
 
-	$parents = array();
+	/*$parents = array();
 	$cid = $catid;
     //echo "<br>$catid:". $CATEGORY[$catid]['child']."--".var_dump($CATEGORY[$catid]);
 	if($catid && $CATEGORY[$catid]['child'])
@@ -2705,12 +2705,15 @@ function get_category_select($title = '', $catid = 0, $linkboxsid = 1, $extend =
 
 	$parents[] = 0;
 	$parents = array_reverse($parents);
+	*/
+	$parents = array($catid);
+	
 	$select = '';
 
 	foreach($parents as $k=>$v) {
 		if($deep && $deep <= $k) break;
 
-		$select .= '<select onchange="load_category(this.value, '."'".$name."'".');" '.$extend.'>';
+		$select .= '<select onchange="load_category(this.value, '."'".$name."'".');sele_obj=this;" '.$extend.'>';
 		if($title) $select .= '<option value="0">'.$title.'</option>';
 		foreach($CATEGORY as $c) {
 			if($c['parentid'] == $v) {
@@ -2723,7 +2726,7 @@ function get_category_select($title = '', $catid = 0, $linkboxsid = 1, $extend =
 	}
 	$CATEGORY = $CATBAK;
     unset($datas,$parents,$CATEGORY,$CATBAK);
-	return $select;
+	return isset($selected) ? $select : '<select style="display:none"></select>';
 }
 
 

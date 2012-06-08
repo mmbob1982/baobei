@@ -68,8 +68,12 @@ define('RELATION_BRAND', 'yp_relation_15');
 //品牌主营产品关系表
 define('RELATION_BRAND_PRODUCTION', 'yp_relation_15_p');
 
-//产品
+//产品模型id
 define('MODELID_PRODUCTION', 13);
+
+//供求模型id
+define('MODELID_TRADE', 14);
+
 
 //<----------------------------------------------------
 

@@ -148,3 +148,9 @@
 <?php exit;?>06-05 21:59:48 | 2 | require(F:\wwwroot\baobei\phpcms\modules\yp\fields\linkbox\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\yp\ypmodel_field.php | 128
 <?php exit;?>06-07 21:38:28 | 2 | Missing argument 6 for push_api::position_update(), called in F:\wwwroot\baobei\caches\caches_model\caches_data\content_update.class.php on line 62 and defined | phpcms\modules\admin\classes\push_api.class.php | 33
 <?php exit;?>06-07 21:41:57 | 2 | require(F:\wwwroot\baobei\phpcms\modules\yp\fields\\config.inc.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory | phpcms\modules\yp\ypmodel_field.php | 213
+<?php exit;?>06-08 20:29:39 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-08 20:30:12 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-08 22:05:18 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-08 22:05:51 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-08 22:07:25 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-08 22:07:34 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30

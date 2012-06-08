@@ -16,6 +16,8 @@ var Try = {
 		return returnValue;
 	}
 }
+var sele_obj = null;
+
 var L= new Array();
 var _tem_m=0;
 L['max_mode']				= '最多可选6种经营模式';
@@ -49,7 +51,20 @@ function into_category() {
 		{
 			//alert('catid_'+cat_id+'***'+category_catid[cat_id]);
 		//	alert('catid_'+xmlHttp.responseText);
-			$('#load_category_'+cat_id)[0].innerHTML = xmlHttp.responseText;
+			var ctx = xmlHttp.responseText;
+		//	$('#load_category_'+cat_id).append($(ctx));
+		
+			//删除右侧
+			var indez = $(sele_obj).index();
+			var size = $('#load_category_'+cat_id+' select').length;
+			if(size-1 > indez){
+				for(i=indez+1; i< size; i++){
+					$('#load_category_'+cat_id+' select:eq('+i+')').css('display', 'none')
+				}
+			}
+			
+			//
+			$(sele_obj).after($(ctx));
 		}
 	}
 }
