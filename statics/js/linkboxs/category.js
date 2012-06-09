@@ -109,11 +109,14 @@ function addcate(m,catid) {
 	var c = s = '';
 	for(var i = 0; i < e.length; i++) 
 	{
-		if(e[i].value) 
-		{
-			s = e[i].options[e[i].selectedIndex].innerHTML; 
-			c += s + '/'; 
-			s = '';
+		var d_v = $(e[i]).css('display');
+		if(d_v != '' && d_v != 'none'){
+			if(e[i].value) 
+			{
+				s = e[i].options[e[i].selectedIndex].innerHTML; 
+				c += s + '/'; 
+				s = '';
+			}
 		}
 	}
 	if(c)
