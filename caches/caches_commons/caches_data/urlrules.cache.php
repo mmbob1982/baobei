@@ -8,5 +8,6 @@ return array (
   17 => 'show-{$catid}-{$id}-{$page}.html',
   18 => 'content-{$catid}-{$id}-{$page}.html',
   30 => 'list-{$catid}-{$page}.html',
+  31 => 'index.php?m=content&c=sub&a=company',
 );
 ?>

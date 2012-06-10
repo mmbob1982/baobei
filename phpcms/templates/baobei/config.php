@@ -1,5 +1,5 @@
 <?php return array (
-  'name' => '定制模板',
+  'name' => '宝贝模板',
   'author' => 'PHPCMS TEAM',
   'dirname' => 'baobei',
   'homepage' => 'http://www.phpcms.cn/',
@@ -236,6 +236,29 @@
     'templates|default|dianping' => 
     array (
       'show_list.html' => '点评显示页',
+    ),
+    'templates|baobei|content' => 
+    array (
+      'category.html' => '文章频道页',
+      'category_download.html' => '',
+      'category_picture.html' => '',
+      'download.html' => '',
+      'footer.html' => '',
+      'header.html' => '',
+      'header_min.html' => '',
+      'header_page.html' => '',
+      'index.html' => '',
+      'list.html' => '列表页',
+      'list_download.html' => '',
+      'list_picture.html' => '',
+      'message.html' => '',
+      'page.html' => '',
+      'rss.html' => '',
+      'search.html' => '',
+      'show.html' => '文章内容页',
+      'show_download.html' => '',
+      'show_picture.html' => '',
+      'tag.html' => '',
     ),
   ),
 );?>

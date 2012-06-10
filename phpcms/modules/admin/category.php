@@ -587,6 +587,9 @@ class category extends admin {
 		$old_dir = '';
 		$catdir = $catdir ? $catdir : $_GET['catdir'];
 		$parentid = intval($_GET['parentid']);
+		
+		empty($parentid) && $parentid = intval($_POST['info']['parentid']);
+		
 		$old_dir = $_GET['old_dir'];
 		$r = $this->db->get_one(array('siteid'=>$this->siteid,'module'=>'content','catdir'=>$catdir,'parentid'=>$parentid));
 		if($r && $old_dir != $r['catdir']) {

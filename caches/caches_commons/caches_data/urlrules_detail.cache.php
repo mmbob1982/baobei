@@ -72,5 +72,14 @@ return array (
     'urlrule' => 'list-{$catid}-{$page}.html',
     'example' => 'list-1-1.html',
   ),
+  31 => 
+  array (
+    'urlruleid' => '31',
+    'module' => 'content',
+    'file' => 'category',
+    'ishtml' => '0',
+    'urlrule' => 'index.php?m=content&c=sub&a=company',
+    'example' => 'sub/company',
+  ),
 );
 ?>
