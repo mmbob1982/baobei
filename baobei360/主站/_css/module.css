@@ -1,0 +1,82 @@
+.FocusT { height:125px; border:1px solid #ddd; background:url(/images/2011/BoxTextAdBg.gif) repeat-x left bottom; line-height:19px; }
+.FocusT a,.FocusT a:visited{ color:#000099; text-decoration:underline}
+.FocusT a:hover{ text-decoration:none}
+
+.FocusTL { width:180px; background:url(/images/2011/dot.gif) repeat-y right top; float:left; }
+.FocusTM { width:430px; padding-left:14px; }
+.FocusTR { width:145px; padding-top:6px; }
+
+.FocusTextBody1 { padding:6px 0 5px 0px; }
+.FocusTextBody1 li { float:left; width:138px; }
+.FocusTextBtn { width:20px; float:left; text-align:center; font-weight:bold; }
+.FocusTextBtn li { margin:1px 0 0 1px; }
+.FocusTextBtn a, .FocusTextBtn a:visited, .FocusTextBtn a:hover { width:20px; height:36px; padding-top:5px; display:block; background:url(/images/2011/BoxTextBtnBg.gif) repeat-y left center; line-height:16px; text-decoration:none; color:#FFF }
+.FocusTextBtn .select a, .FocusTextBtn .select a:visited, .FocusTextBtn .select a:hover { background:none; text-decoration:none; height:34px; color:#404e17 }
+.FocusTextBody { padding:6px 0 0 10px; float:left }
+
+#FocusNews { height:259px; margin-top:7px; border:1px solid #ddd; background:url(/images/2011/BoxFocusBg.gif) repeat-x left top; }
+#FocusNews .FocusNewsL { width:490px; float:left; }
+#FocusNews .FocusNewsR { float:right; padding:3px 2px 2px; padding-left:14px; background:url(/images/2011/BoxFocusPicBg.gif) no-repeat left bottom; }
+.FocusNewsL .tit { margin:-1px 0 0 -1px; width:115px; height:32px; background:url(/images/2011/BoxFocusTitBg.gif) repeat-x left top; position: relative }
+.FocusNewsL .tit h2 { padding-left:15px; font-size:14px; line-height:32px; font-weight:bold; color:#404e17; display:inline-block; }
+.FocusNewsL .bd { padding:8px 0 0 10px; }
+
+
+.BoxGreen { background:url(/images/2011/BoxGreenTitBg.gif) repeat-x left top;}
+.BoxGreen .tit{ float:left; margin:-5px 0 0; position:relative; }
+.BoxGreen .tit h2{ height:29px; display:inline-block; background:url(/images/2011/BoxGreenTit.gif) no-repeat left top; padding-left:15px; line-height:29px; font-size:14px; color:#fff; float:left; }
+.BoxGreen .tit h2 a{color:#fff; }
+.BoxGreen .tit span{ width:15px; height:29px; display:inline-block; overflow:hidden; background:url(/images/2011/BoxGreenTit.gif) no-repeat right top; float:left; }
+.BoxGreen .bd{  border:1px solid #ddd; clear:both}
+.BoxGreen .tab{ float:left; margin:3px 0 0 5px; border-right:1px solid #aace40}
+.BoxGreen .tab a{ background:url(/images/2011/BoxGreenTabBg.gif) repeat-x left top; display:inline-block; height:26px; line-height:26px; color:#FFF; padding:0 8px; text-decoration:none; font-weight:bold}
+.BoxGreen .tab a:hover,.BoxGreen .tab a.select{ background:url(/images/2011/BoxGreenTabBg.gif) repeat-x left -26px; color:#404e17;}
+
+.BoxGreenLight { }
+.BoxGreenLight .tit{ border:1px solid #ddd; border-bottom:none; background:url(/images/2011/BoxGreenLightTitBg.gif) repeat-x left top; }
+.BoxGreenLight .tit h2{ height:23px; display:inline-block; padding-left:10px; line-height:23px; font-size:14px; color:#404e17; }
+.BoxGreenLight .bd{  border:1px solid #ddd; clear:both}
+
+.Block { background:url(/images/2011/BlockBg.gif) no-repeat left top; width:485px; height:385px; }
+.BlockLT { background-position:left top;}
+.BlockRT { background-position:right top;}
+.BlockLB { background-position:left -395px;}
+.BlockRB { background-position:right -395px;}
+.BlockLC { background-position:left bottom;}
+.BlockRC { background-position:right bottom;}
+.BlockLeft{ width:360px; height:270px; float:left;}
+.BlockLeft h2 a{ display:inline-block; width:150px; height:30px; padding-top:10px; text-align:right;}
+.BlockLeft dl dt a{ background:#FFF; padding:2px; border:1px solid #ddd; margin:0 10px 0 20px; float:left;}
+.BlockLeft ul{ padding:10px 0 0; margin:10px 10px 0 17px;}
+
+.BlockRight{width:124px; height:267px; margin:3px 0 0 0; float:right; background:url(/images/2011/BlockBrandBg.png) no-repeat left top;}
+.BlockRight h2{background:url(/images/2011/BlockBrandTitBg.gif) repeat-x left bottom; height:25px; line-height:25px; margin:1px 4px 0 1px; text-align:center; display:block;}
+.BlockRight h2 a{color:#404e17;}
+.BlockRight ul{padding:11px 0 0;}
+
+
+.BoxGreenTopLine { }
+.BoxGreenTopLine .tit{ border:1px solid #ddd; border-top:2px solid #a9ce3d; border-bottom:none; background:url(/images/2011/BoxGreenLightTitBg.gif) repeat-x left top; }
+.BoxGreenTopLine .tit h2{ height:25px; display:inline-block; padding-left:25px; line-height:25px; font-size:14px; color:#404e17; background:url(/images/2011/icoGdot.gif) no-repeat 10px center;  }
+.BoxGreenTopLine .tit a{ color:#404e17}
+.BoxGreenTopLine .bd{  border:1px solid #ddd; clear:both}
+
+.BoxGreenTopLine1 { }
+.BoxGreenTopLine1 .tit{ border:1px solid #ddd; border-top:1px solid #a9ce3d; background:url(/images/2011/BoxGreenLightTitBg.gif) repeat-x left top;border-bottom:none; }
+.BoxGreenTopLine1 .tit h2{ display:inline-block; line-height:34px; font-size:14px; color:#404e17; background:url(/images/2011/GreenTitBg.png) no-repeat left center; width:166px; height:34px; margin-top:-3px; text-align:center; position:relative; margin-left:10px;}
+.BoxGreenTopLine1 .tit a{ color:#404e17}
+.BoxGreenTopLine1 .bd{ margin-top:-3px; border:1px solid #ddd; clear:both}
+
+.index_Product {  }
+.index_Product img { vertical-align:middle; }
+.index_Product li { float:left; width:159px; text-align:center; line-height:normal; height:195px; }
+.index_Product li .pic { border:1px solid #ddd; width:120px; padding:1px; margin:auto; display:inline-block; margin-bottom:8px; clear:both; }
+
+.BoxGreenSoft { border:1px solid #ddd; background:url(/images/2011/GreenSoftTitBg.gif) repeat-x left 1px;;}
+.BoxGreenSoft .tit{ border-bottom:1px solid #99a21c;}
+.BoxGreenSoft .tit h2{ height:28px; display:inline-block; padding-left:20px; line-height:28px; font-size:14px; color:#404e17; background:url(/images/2011/icoGdot.gif) no-repeat 4px center;  }
+.BoxGreenSoft .tit a{ color:#404e17}
+.BoxGreenSoft .bd{ padding:10px 0; }
+
+.ImageDetailRight dt{border:1px solid #ddd; padding:1px; float:left}
+.ImageDetailRight dd{ padding-left:15px;float:left}

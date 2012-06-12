@@ -1,0 +1,3 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=749e739af129692efc4c86ab9926cee2&action=lists&catid=%24this-%3Esub_news_catid&order=id+desc&limit=10\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">±à¼­</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>$this->sub_news_catid,'order'=>'id desc','limit'=>'20',));}?>
+<?php var_dump($data);?>
+<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>

@@ -1,0 +1,190 @@
+@charset "gb2312";
+
+/* CSS Document */
+
+body{ background:#66c13e;}
+#wrapper{ background:#fff; padding:0 5px}
+
+.lh2{ line-height:2;}
+.p5{ padding:5px;}
+.p10{ padding:10px;}
+.mt20{ margin-top:20px;}
+.mt30{ margin-top:30px;}
+.font14px{ font-size:14px;}
+a.fc1d54cf,a.fc1d54cf:visited{ color:#1d54cf; text-decoration:none;}
+a.fc1d54cf:hover{ color:#1d54cf; text-decoration:underline;}
+a.fc0e5913,a.fc0e5913:visited{ color:#0e5913; text-decoration:none;}
+a.fc0e5913:hover{ color:#0e5913; text-decoration:underline;}
+
+/*********************
+	·ÖÒ³
+*********************/
+.BtnPage { padding:20px 0; margin:10px 10px 0; border-top:1px solid #d9d9d9; text-align:center;}
+.BtnPage ul{ clear:both; display:inline-block; #display:inline; font-size:12px; font-family:Arial, Helvetica, sans-serif; vertical-align:middle}
+.BtnPage ul li{ display:inline; margin:0 3px; text-align:center; height:25px;}
+.BtnPage ul li a,.BtnPage ul li a:visited{ display:inline; padding:2px 5px 1px; border:1px solid #bbb; line-height:normal; color:#111}
+.BtnPage ul li a:hover{ border:1px solid #00a0e9; text-decoration:none; background:#00a0e9; color:#fff}
+.BtnPage ul #N{padding:2px 5px 1px; border:1px solid #bbb; color:#999;}
+.BtnPage ul #P{padding:2px 5px 1px; border:1px solid #00a0e9; background: #00a0e9; color:#fff; font-weight:bold;}
+.BtnPage select{ vertical-align:middle}
+
+
+#header{ background:url(../images/mainNavBg.gif) repeat-x left bottom; height:80px;}
+#header #logo{ float:left; padding-left:10px;}
+#header #logo1{ float:left; margin-right:20px; padding:8px 0;}
+#header #logo2{ float:left; margin-right:20px; padding:8px 0;}
+#mainnav{ float:right;line-height:18px; padding:15px 10px 0 0;color:#333;}
+#mainnav a,#mainnav a:visited{ color:#333;}
+#mainnav a:hover{ color:#a00;}
+
+.mainnav{background:#1ba823 url(../images/subnavbg.png) repeat-x left top; height:35px; line-height:35px; padding:0 0 0 5px; margin-top:1px; color:#FFF}
+.mainnav a,.mainnav a:visited{ color:#FFF; font-size:14px; padding:0 5px; height:35px; display:inline-block; float:left;}
+.mainnav a:hover,.mainnav a.on{ background:url(../images/bdTopBg.png) repeat-x left 5px; color:#000; text-decoration:none}
+
+
+#subnav{ background:url(../images/subnavbg.png) repeat-x left top; background-color:#86ac4d; height:35px; line-height:35px; padding-left:10px;}
+#subnav ul li{ float:left; margin-right:1px;}
+#subnav ul li a,#subnav ul li a:visited{ color:#FFF; font-size:14px; padding:0 12px; height:35px; display:inline-block; float:left;}
+#subnav ul li a:hover,#subnav ul li a.on,#subnav ul li a.on:visited{ background:url(../images/bdTopBg.png) repeat-x left bottom; color:#000; text-decoration:none;}
+
+#mainImgTop{ margin-top:1px;}
+#main{ border:1px solid #ccc; padding-bottom:30px;}
+#maintop{ margin:1px; _display:inline; background:url(../images/bdTopBg.png) repeat-x left top; overflow:visible; background-color:#86ac4d; height:30px; }
+
+#brandlogo{ float:left; text-align:center; background:url(../images/IcoBrand.gif) no-repeat 15px bottom; padding-left:30px; }
+#brandlogo div{ border:3px solid #ddd; padding:10px 0 0; width:190px;}
+#brandlogo h1{ display:block; margin:10px 2px 0; padding:10px 0; border-top:1px solid #ddd; line-height:normal; font-size: 14px; font-weight:bold; }
+
+#brandinfo{ float:left; padding-left:30px; font-size:14px; line-height:24px; width:510px}
+#brandbt{ float:right; background:url(../images/dot1.gif) repeat-y left top; font-size:14px; padding:0 30px 0 20px;}
+#brandbt ul li{background:url(../images/IcoTit.gif) no-repeat left bottom; padding-left:10px; margin:7px 0;}
+#brandbt strong{ border:1px solid #FFF; display:block; padding:3px 0;}
+#brandbt a,#brandbt a:visited{ display:block; _display:inline; width:120px; border:1px solid #CCC; text-align:center; background:url(../images/BtnBg.png) repeat-x left top; background-color:#000; border:1px solid #000; color:#FFF;}
+#brandbt a:hover{ background:#000; text-decoration:none; }
+#brandbt a.bt1,#brandbt a.bt1:visited{ background-color:#1851cf; border:1px solid #1851cf;}
+#brandbt a.bt1:hover{ background:#1851cf; text-decoration:none;}
+#brandbt a.bt2,#brandbt a.bt2:visited{ background-color:#c61800; border:1px solid #c61800;}
+#brandbt a.bt2:hover{ background:#c61800; text-decoration:none;}
+#brandbt a.bt3,#brandbt a.bt3:visited{ background-color:#efba00; border:1px solid #efba00;}
+#brandbt a.bt3:hover{ background:#efba00; text-decoration:none;}
+
+.BrandBoxA{}
+.BrandBoxA .tit{background:url(../images/IcoTit.gif) no-repeat left bottom; padding-left:10px;}
+.BrandBoxA .tit h2{ display:block; border-left:4px solid #86ac4d; border-bottom:1px solid #ccc; font-size:14px; height:25px; line-height:25px; padding-left:15px; background:#f5f5f5; color:#000;}
+.BrandBoxA .bd{ padding-left:10px;}
+
+.BrandBoxB{}
+.BrandBoxB .tit{background:url(../images/IcoTit.gif) no-repeat left bottom; padding-left:10px;}
+.BrandBoxB .tit h2{ display:block; border:1px solid #a4dca7; border-left:4px solid #1ba823; border-right:none; font-size:14px; height:25px; line-height:25px; padding-left:15px; background:#d1edd3 url(../images/BtnBg.png) repeat-x left bottom; color:#0e5913;}
+.BrandBoxB .bd{ padding-left:10px;}
+
+.BrandBoxC{}
+.BrandBoxC .tit{background:url(../images/IcoTit.gif) no-repeat left bottom;}
+.BrandBoxC .tit h2{ display:block; border:1px solid #a4dca7; border-left:4px solid #1ba823; font-size:14px; height:25px; line-height:25px; padding-left:15px; background:#d1edd3 url(../images/BtnBg.png) repeat-x left bottom; color:#0e5913;}
+.BrandBoxC .bd{border:1px solid #a4dca7; border-top:none;background:#f6fbf6; }
+
+.brandNewsList { background:#fafafa;}
+.brandNewsList em{ font-style:normal; color:#1d54cf}
+.brandNewsList em a,.brandNewsList em a:visited{ color:#1d54cf; text-decoration:none;}
+.brandNewsList em a:hover{ color:#1d54cf; text-decoration:none;}
+
+.brandProductList li{ float:left; text-align:center; width:153px; height:205px;}
+.brandProductList li .pic{ display:inline-block; border:2px solid #CCC; padding:1px;}
+.brandProductList li .txt{ display:inline-block;  padding:5px 10px 0; line-height:16px;}
+
+.brandShopList { width:280px;}
+.brandShopList li{ float:left; text-align:center; width:140px; height:140px;}
+.brandShopList li .pic{ display:inline-block; border:2px solid #CCC; padding:1px;}
+.brandShopList li .txt{ display:inline-block;  padding:5px 10px 0; line-height:16px;}
+
+.brandShopList6 li{ float:left; text-align:center; width:183px; height:175px;}
+.brandShopList6 li .pic{ display:inline-block; border:2px solid #CCC; padding:1px;}
+.brandShopList6 li .txt{ display:inline-block; padding:5px 10px 0; line-height:16px;}
+
+.brandVideoList6 li{ float:left; text-align:center; width:153px; height:150px;}
+.brandVideoList6 li .pic{ display:inline-block; border:2px solid #CCC; padding:1px;}
+.brandVideoList6 li .txt{ display:inline-block; padding:5px 10px 0; line-height:16px;}
+
+
+.VideoList { padding:12px 0 0;}
+.VideoList li{ float:left; width:20%; height:190px; text-align:center;}
+.VideoList li .Img{ display:inline-block; border:2px solid #d4d4d4; padding:1px; margin-bottom:5px; clear:both; position:relative; z-index:1;}
+.VideoList li .PlayBg{ position:absolute; left:1px; top:1px; width:140px; height:105px; background:url(http://video.ef360.com/images/VideoPlayBg.png) no-repeat center; display:block; z-index:3; display:none;}
+.VideoList li .Link{ margin:0 15px 0 20px; clear:both; display:block; text-align:left; line-height:1.5;}
+.VideoList li .Hits{ margin:0 15px 0 20px; clear:both; display:block; text-align:left; line-height:1.5; color:#666;}
+.VideoList a,.VideoList a:visited{color:#0033cc;text-decoration:none; cursor:pointer}
+.VideoList a:hover{color:#bd0a01;text-decoration:underline;}
+
+
+.shopnetList li{ clear:both;}
+.shopnetList li span{ display:inline-block; float:left;}
+.shopnetList li .t1{ width:455px; color:#666}
+.shopnetList li .t2{ width:455px; color:#666}
+
+
+.PHBrand{}
+.PHBrand em{ font-style:normal; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#fff; background-image:url(../images/IcoPh.gif); background-repeat:no-repeat; background-position:0 bottom; width:17px; height:13px; line-height:13px; text-align:center; display:inline-block; padding-right:4px; margin-right:10px; display:inline-block;}
+.PHBrand .PH_1{ background-position:0 0;}
+.PHBrand .PH_2{ background-position:0 -14px;}
+.PHBrand .PH_3{ background-position:0 -27px;}
+.PHBrand li span{ display:inline-block;}
+.PHBrand li .t1{ width:120px;}
+.PHBrand li .t2{ width:0px; color:#666}
+.PHBrand li .t3{ width:48px;}
+.PHBrand li .t8{ width:195px;}
+.PHBrand li .t7{ width:165px;}
+
+.BrandListText li { float:left; width:110px; text-align:center; }
+.BrandListText li a, .BrandListText li a:visited { display:block; border:1px solid #ddd; margin:1px; }
+.BrandListText li a:hover { background:#efefef; color:#000; text-decoration:none; }
+
+.BrandCompanyListText li { float:left; width:319px; text-align:left; line-height:1.4; }
+.BrandCompanyListText li a, .BrandCompanyListText li a:visited { display:block; background:#FFF; border:1px solid #ddd; margin:1px; padding:5px 10px; }
+.BrandCompanyListText li a:hover { background:#efefef; color:#000; text-decoration:none; }
+.BrandCompanyListText li strong{ color:#014ccc}
+
+
+.NewBrandText li { line-height:1.5; width:50%; float:left;}
+.NewBrandText li a, .NewBrandText li a:visited { display:block; border:1px solid #ddd; margin:1px; padding:5px; }
+.NewBrandText li a:hover { background:#999; color:#FFF; text-decoration:none; }
+.NewBrandText li strong{ color:#014ccc}
+
+.BrandListLogo li { float:left; width:162px; text-align:center; margin-bottom:10px; }
+.BrandListLogo li div { background:#FFF; border:1px solid #ddd; display:inline-block; padding:10px 10px 5px; width:120px; margin:auto; }
+.BrandListLogo li .Pic { border-bottom:1px solid #ddd; padding-bottom:10px; display:block; }
+.BrandListLogo li .Txt { color:#014ccc }
+
+
+.ZineList { padding:20px 0px}
+.ZineList li{ float:left; text-align:center; width:214px; height:340px; background:#ddd; margin:0px 6px 10px ; padding:1px;}
+.ZineList li .pic{ display:inline-block; border:2px solid #FFF}
+.ZineList li .txt{ display:block; height:40px; line-height:16px; padding:10px 10px 0; font-size:14px; background:#FFF;}
+
+
+.BrandListLogoIndex li { float:left; width:25%; height:90px;text-align:center; margin-bottom:10px; }
+.BrandListLogoIndex li div { background:#FFF; border:1px solid #ddd; display:inline-block; padding:2px; width:135px; margin:auto; }
+.BrandListLogoIndex li .Pic { border-bottom:1px solid #ddd; padding-bottom:2px; display:block; }
+.BrandListLogoIndex li .Txt { color:#014ccc }
+
+
+.HotBrandRightArea { padding:0; }
+.HotBrandRightArea li { float:left; width:25%; font-size:12px; text-align:center }
+.HotBrandRightArea li a, .HotBrandRight li a:visited { display:block; background:#f6fbf6; border:1px solid #a4dca7; margin:1px; color:#333 }
+.HotBrandRightArea li a:hover { background:#1ba823; border:1px solid #1ba823; color:#FFF; text-decoration:none; }
+
+.HotBrandRightCategory { padding:0; }
+.HotBrandRightCategory li { float:left; width:33.3%; font-size:12px; text-align:center }
+.HotBrandRightCategory li a, .HotBrandRight li a:visited { display:block; background:#f6fbf6; border:1px solid #a4dca7; margin:1px; color:#333 }
+.HotBrandRightCategory li a:hover { background:#1ba823; border:1px solid #1ba823; color:#FFF; text-decoration:none; }
+
+
+#searchbar { color:#aa0000 }
+#searchbar a, #searchbar a:visited { color:#aa0000; }
+#searchbar a:hover { color:#aa0000; }
+#searchbar .SearchInput { background:url(../images/SearchInputBg.gif) no-repeat left top; margin:0; padding:0; outline:none; border:none; color:#5a5a5a; height:24px; padding-left:4px; line-height:24px; vertical-align:middle; }
+a.BtnBrandJoinBg, a.BtnBrandJoinBg:visited { background:#c61800 url(../images/BtnBg.png) repeat-x left bottom; width:112px; height:25px; line-height:25px; display:inline-block; vertical-align:middle; text-align:center; text-decoration:none; font-weight:bold; color:#fff; }
+ a.BtnBrandJoinBg:hover { background:#c61800; text-decoration:none;}
+ 
+.CategoryList dt{ font-weight:bold; padding:0 15px 0 8px; background:url(../images/dot1.gif) repeat-y right top; float:left}
+.CategoryList dd{ float:left; padding:0 15px; }
+

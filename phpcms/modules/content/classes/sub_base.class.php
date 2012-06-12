@@ -9,6 +9,9 @@ pc_base::load_app_func('util','content');
 
 class sub_base{
 	protected $db;
+	//资讯
+	protected $sub_news_catid = 0;
+	protected $sub_news_modelid = 1;	//默认使用文章模型
 	//行业分类
 	protected $sub_linkageid = 0;
 	//行业分类子类
@@ -22,6 +25,7 @@ class sub_base{
 	
 	function __construct() {
 		$this->db = pc_base::load_model('content_model');
+		$this->db->set_model($this->sub_news_modelid);
 		$this->_userid = param::get_cookie('_userid');
 		$this->_username = param::get_cookie('_username');
 		$this->_groupid = param::get_cookie('_groupid');
@@ -51,15 +55,23 @@ class sub_base{
 		
 	}
 	
+	//企业
 	function company(){
 		$company_db = pc_base::load_model('company_model');
 		$recommend_company_arr = $company_db->get_recommend_company($this->sub_linkageid_arrchildid, '*', 2);
 		$newest_company_arr = $company_db->get_newest_company($this->sub_linkageid_arrchildid, '*', 2);
 		
-		
+		//供求经销加盟
 		$trade_db = pc_base::load_model('trade_model');
 		$newest_trade = $trade_db->get_newest_trade($this->sub_linkageid_arrchildid, '', 2);
-		var_dump($newest_trade);
+//		var_dump($newest_trade);
+		
+		include template('sub', 'company');
+	}
+	
+	//品牌
+	function brand(){
+		
 	}
 }
 ?>
