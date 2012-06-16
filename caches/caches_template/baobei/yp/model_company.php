@@ -6,10 +6,10 @@
         	
             <div class="cat-content">
            <?php $n=1;if(is_array($company_fenlei)) foreach($company_fenlei AS $r) { ?><?php if($r[parentid]=='0') { ?><div class="cat-item ib">
-                    <h4><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></h4>
+                    <h4><a href="/index.php?m=content&c=company&a=lists&catid=<?php echo $r['catid'];?>"><?php echo $r['catname'];?></a></h4>
                     <p>		<?php $arr_parentid = yp_subcat($r['catid'], $modelid);?>
  							<?php $n=1;if(is_array($arr_parentid)) foreach($arr_parentid AS $k) { ?>
-							<a title="<?php echo $k['catname'];?>" href="<?php echo $k['url'];?>" target="_blank"><?php echo $k['catname'];?></a>
+							<a title="<?php echo $k['catname'];?>" href="/index.php?m=content&c=company&a=lists&catid=<?php echo $k['catid'];?>" target="_blank"><?php echo $k['catname'];?></a>
 							<?php $n++;}unset($n); ?>
 							</p></div><?php } ?><?php $n++;}unset($n); ?>
 			</div>

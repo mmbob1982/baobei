@@ -69,7 +69,6 @@ class content_tag {
 			}
 		}
 		$order = $data['order'];
-echo $sql;
 		$return = $this->db->select($sql, '*', $data['limit'], $order, '', 'id');
 						
 		//调用副表的数据

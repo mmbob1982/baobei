@@ -1,5 +1,5 @@
 <?php
-return '<!--expiretime:1339074039-->
+return '<!--expiretime:1339848207-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -57,7 +57,10 @@ return '<!--expiretime:1339074039-->
 			 			 			 			 				<li class="line">|</li>
 				<li><a href="http://www.baobei.com/index.php?m=yp&c=index&a=model&modelid=15"><span>品牌</span></a></li>
 			 			 				 <li class="line">|</li>
-				<li><a href="http://www.baobei.com/index.php?m=yp&c=index&a=company"><span>企业库</span></a></li>
+				<li><a href="/index.php?m=content&c=company&a=index"><span>企业库</span></a></li>
+				<li><a href="/index.php?m=content&c=brand&a=index"><span>品牌库</span></a></li>
+				<li><a href="/index.php?m=content&c=product&a=index"><span>产品库</span></a></li>
+				<li><a href="/index.php?m=content&c=trade&a=index"><span>供求</span></a></li>
             </ul>
         </map>
     </div>
@@ -68,7 +71,19 @@ return '<!--expiretime:1339074039-->
     	<div class="category-main box generic">
         	<div class="title"><strong>供求分类</strong></div>
             <div class="cat-content">
-						</div>
+			                <div class="cat-item ib">
+                    <h4><a href="http://www.baobei.com/index.php?m=yp&c=index&a=lists&catid=47">供应</a></h4>
+					                </div>
+				                <div class="cat-item ib">
+                    <h4><a href="http://www.baobei.com/index.php?m=yp&c=index&a=lists&catid=48">找品牌</a></h4>
+					                </div>
+				                <div class="cat-item ib">
+                    <h4><a href="http://www.baobei.com/index.php?m=yp&c=index&a=lists&catid=49">招加盟</a></h4>
+					                </div>
+				                <div class="cat-item ib">
+                    <h4><a href="http://www.baobei.com/index.php?m=yp&c=index&a=lists&catid=50">招经销</a></h4>
+					                </div>
+							</div>
         </div>
     </div>
     <div class="col-auto">
@@ -81,7 +96,8 @@ return '<!--expiretime:1339074039-->
 										<ul class="list-num">
 								</ul>
 										<ul class="list-num" style="display:none;">
-									<li><em class="n1">1</em><a href="" class="blue">[]</a> <a href="http://www.baobei.com/index.php?m=yp&c=index&a=show&catid=,3416,3418,&id=1">产品1</a></li>
+									<li><em class="n1">1</em><a href="http://www.baobei.com//index.php?m=yp&c=index&a=list_company&catid=3584" class="blue">[哺乳文胸]</a> <a href="http://www.baobei.com/index.php?m=yp&c=index&a=show&catid=3584&id=2">产品1</a></li>
+									<li><em class="n2">2</em><a href="http://www.baobei.com//index.php?m=yp&c=index&a=list_company&catid=3454" class="blue">[安抚奶嘴]</a> <a href="http://www.baobei.com/index.php?m=yp&c=index&a=show&catid=3454&id=3">产品2</a></li>
 								</ul>
 						</div>
             <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
@@ -94,8 +110,11 @@ return '<!--expiretime:1339074039-->
             </ul>
 			<div class="swap-content">
 						         	<ul class="list-num">
+									<li><em class="n1">1</em><a href="http://www.baobei.com/index.php?m=yp&c=index&a=lists&modelid=76&page=" class="blue" target="_blank">[]</a> <a href="http://www.baobei.com/index.php?m=yp&c=index&a=show&catid=49&id=2">1111111111</a></li>
 				            </ul>
 			                        <ul class="list-num" style="display:none;">
+									<li><em class="n1">1</em><a href="http://www.baobei.com/index.php?m=yp&c=index&a=lists&modelid=76&page=" class="blue" target="_blank">[]</a> <a href="http://www.baobei.com/index.php?m=yp&c=index&a=show&catid=47&id=1">供应品牌2</a></li>
+									<li><em class="n2">2</em><a href="http://www.baobei.com/index.php?m=yp&c=index&a=lists&modelid=76&page=" class="blue" target="_blank">[]</a> <a href="http://www.baobei.com/index.php?m=yp&c=index&a=show&catid=49&id=2">1111111111</a></li>
 				            </ul>
 						</div>
             <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>

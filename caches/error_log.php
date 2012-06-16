@@ -158,3 +158,7 @@
 <?php exit;?>06-10 11:33:18 | 2 | chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory | phpcms\modules\content\classes\html.class.php | 358
 <?php exit;?>06-10 12:15:29 | 2 | require_once(sub\sub_yunf.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory | phpcms\modules\content\sub.php | 10
 <?php exit;?>06-10 12:17:31 | 2 | require_once(sub\sub_.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory | phpcms\modules\content\sub.php | 13
+<?php exit;?>06-16 09:32:07 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-16 09:33:29 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-16 09:35:32 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30
+<?php exit;?>06-16 09:35:38 | 2 | strlen() expects parameter 1 to be string, array given | caches\caches_model\caches_data\yp_input.class.php | 30

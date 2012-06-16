@@ -1,0 +1,15 @@
+<!-- 最新资讯 -->
+{pc:content action="lists" catid="$this->sub_news_catid" order="id desc" limit="20"}
+{php var_dump($data);}
+{/pc}
+
+<!-- 图片新闻 -->
+{pc:content action="lists" catid="$this->sub_news_catid" thumb=1 order="id desc" limit="20"}
+{php var_dump($data);}
+{/pc}
+
+
+<!-- 热文排行 -->
+{pc:content action="hits" catid="$this->sub_news_catid"  limit="10"}
+{php var_dump($data);}
+{/pc}

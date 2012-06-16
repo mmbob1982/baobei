@@ -6,10 +6,10 @@
         	
             <div class="cat-content">
            {loop $company_fenlei $r}{if $r[parentid]=='0'}<div class="cat-item ib">
-                    <h4><a href="{$r['url']}">{$r['catname']}</a></h4>
+                    <h4><a href="/index.php?m=content&c=company&a=lists&catid={$r['catid']}">{$r['catname']}</a></h4>
                     <p>		{php $arr_parentid = yp_subcat($r['catid'], $modelid);}
  							{loop $arr_parentid $k}
-							<a title="{$k['catname']}" href="{$k['url']}" target="_blank">{$k['catname']}</a>
+							<a title="{$k['catname']}" href="/index.php?m=content&c=company&a=lists&catid={$k['catid']}" target="_blank">{$k['catname']}</a>
 							{/loop}
 							</p></div>{/if}{/loop}
 			</div>

@@ -61,6 +61,7 @@
             	<li><a href="<?php echo siteurl($siteid);?>" class="on"><span>首页</span></a></li>
 				<li class="line">|</li>
 				<li><a href="<?php echo get_yp_url();?>" ><span>企业黄页</span></a></li>
+				<!--
              <?php $n=1;if(is_array($this->models)) foreach($this->models AS $r) { ?>
 			 <?php $r['setting'] = string2array($r['setting']);?>
 			 <?php if($r['setting']['ismenu']) { ?>
@@ -68,8 +69,11 @@
 				<li><a href="<?php echo get_yp_url('model', $r['modelid']);?>"><span><?php echo $r['name'];?></span></a></li>
 			 <?php } ?>
 			 <?php $n++;}unset($n); ?>
-				 <li class="line">|</li>
-				<li><a href="<?php echo get_yp_url('company');?>"><span>企业库</span></a></li>
+				 --><li class="line">|</li>
+				<li><a href="/index.php?m=content&c=company&a=index"><span>企业库</span></a></li>
+				<li><a href="/index.php?m=content&c=brand&a=index"><span>品牌库</span></a></li>
+				<li><a href="/index.php?m=content&c=product&a=index"><span>产品库</span></a></li>
+				<li><a href="/index.php?m=yp&c=index&a=model&modelid=<?php echo MODELID_TRADE;?>"><span>供求</span></a></li>
             </ul>
         </map>
     </div>
