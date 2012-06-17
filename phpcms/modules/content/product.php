@@ -23,14 +23,14 @@ class product {
 	}
 
 	//Æ·ÅÆ¿â¹ÜÀí
-	public function index() {
+	public function init() {
 		
 		$company_fenlei = getcache('category_yp_'.MODELID_PRODUCTION,'yp');
 		$this->setting['seo_title'] =  L('yp').' - '.L('business_model');
 		$this->setting['meta_keywords'] = L('yp').' - '.L('business_model');
 		$this->setting['meta_description'] = L('yp').' - '.L('business_model');
 		$SEO = seo(SITEID, '', $this->setting['seo_title'], $this->setting['meta_description'], $this->setting['meta_keywords']);
-   		include template('yp', 'model_product');
+   		include template('product', 'model_product');
 		if($this->setting['encode_page_cache']) cache_page(1200);
 	}
 
@@ -153,7 +153,7 @@ class product {
 			$where .= ' AND p.catid in ('. get_arrchildid(3413, $catid_p).')';
 		}
 		
- 		include template('yp', 'list_product');
+ 		include template('product', 'list_product');
 	}
 }
 ?>

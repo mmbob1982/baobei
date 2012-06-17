@@ -80,7 +80,7 @@ class company {
 	}
 
 	//企业库管理
-	public function index() {
+	public function init() {
 		$modelid = $this->get_company_model();
 		$company_fenlei = getcache('category_yp_'.$modelid,'yp');
 		

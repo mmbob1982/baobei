@@ -74,7 +74,8 @@ define('MODELID_PRODUCTION', 13);
 //供求模型id
 define('MODELID_TRADE', 14);
 
-
+//企业模型
+define('MODELID_COMPANY', 11);
 //<----------------------------------------------------
 
 

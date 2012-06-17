@@ -126,7 +126,7 @@ class yp_tag {
 		$yp_relation_db = pc_base::load_model('yp_relation_model');
  		$sql = get_sql_catid("category_yp_".$modelid,$catid,'yp');
   		$sql .= " group by userid";
-  		echo $sql;
+//  		echo $sql;
  		return $yp_relation_db->select($sql, '*', $data['limit'], $order, '');
  	}
  	
